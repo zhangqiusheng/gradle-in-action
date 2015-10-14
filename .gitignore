@@ -48,6 +48,7 @@ local.properties
 x64/
 ./build/
 ./.gradle/
+./.idea/
 [Bb]in/
 [Oo]bj/
 
