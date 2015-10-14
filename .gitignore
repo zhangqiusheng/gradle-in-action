@@ -46,7 +46,8 @@ local.properties
 [Dd]ebug/
 [Rr]elease/
 x64/
-build/
+./build/
+./.gradle/
 [Bb]in/
 [Oo]bj/
 
