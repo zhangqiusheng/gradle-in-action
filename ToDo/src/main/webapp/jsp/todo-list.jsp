@@ -22,7 +22,7 @@
         <label for="toggle-all">Mark all as complete</label>
         <ul id="todo-list">
             <c:forEach var="toDoItem" items="${toDoItems}" varStatus="status">
-                <li id="toDoItem_${status.count}" class="<c:if test="${toDoItem.completed}">completed</c:if>" ondblclick="javascript:document.getElementById(oDoItem_${status.count}').className += ' editing';document.getElementById('toDoItemName_${status.count}').focus();">
+                <li id="toDoItem_${status.count}" class="<c:if test="${toDoItem.completed}">completed</c:if>" ondblclick="javascript:document.getElementById('toDoItem_${status.count}').className += ' editing';document.getElementById('toDoItemName_${status.count}').focus();">
                     <div class="view">
                         <form id="toggleForm_${status.count}" action="<c:url value="toggleStatus"/>" method="POST">
                             <input type="hidden" name="id" value="${toDoItem.id}"/>
@@ -39,7 +39,7 @@
                     <form id="updateForm_${status.count}" action="<c:url value="update"/>" method="POST">
                         <input type="hidden" name="id" value="${toDoItem.id}"/>
                         <input type="hidden" name="filter" value="${filter}"/>
-                        <input class="edit" id="toDoItemName_${status.count}" name="name" value="${toDoItem.name}" onblur="javascript:document.getElementById(pdateForm_${status.count}').submit();"/>
+                        <input class="edit" id="toDoItemName_${status.count}" name="name" value="${toDoItem.name}" onblur="javascript:document.getElementById('updateForm_${status.count}').submit();"/>
                     </form>
                 </li>
             </c:forEach>
