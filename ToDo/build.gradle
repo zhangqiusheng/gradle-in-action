@@ -2,7 +2,14 @@ apply plugin: 'java'
 
 group = 'com.manning.gia'
 
-sourceCompatibility = 1.6
+
+repositories {
+    mavenCentral();
+}
+
+dependencies {
+    compile group:'org.apache.commons', name:'commons-lang3',version:'3.1'
+}
 
 jar {
     manifest{

@@ -216,3 +216,9 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.xml
+ToDo/.gradle/2.7/taskArtifacts/cache.properties
+*.lock
+ToDo/.gradle/2.7/taskArtifacts/fileHashes.bin
+*.bin
+ToDo/.idea/.name
