@@ -222,3 +222,7 @@ ToDo/.gradle/2.7/taskArtifacts/cache.properties
 ToDo/.gradle/2.7/taskArtifacts/fileHashes.bin
 *.bin
 ToDo/.idea/.name
+ToDo/gradle/wrapper/gradle-wrapper.jar
+ToDo/gradle/wrapper/gradle-wrapper.properties
+ToDo/gradlew.bat
+ToDo/gradlew
